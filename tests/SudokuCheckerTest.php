@@ -4,7 +4,7 @@ namespace Sudoku\Tests;
 
 use PHPUnit\Framework\TestCase;
 use Sudoku\SudokuChecker;
-use Sudoku\SudokuChecker2;
+use Sudoku\XorSudokuChecker;
 
 class SudokuCheckerTest extends TestCase
 {
@@ -20,11 +20,11 @@ class SudokuCheckerTest extends TestCase
 
     /**
      * @dataProvider solutions
-     * @covers \Sudoku\SudokuChecker2::check()
+     * @covers \Sudoku\XorSudokuChecker::check()
      */
     public function testSudokuSolutionChecker2(array $sudoku, bool $isValid)
     {
-        $checker = new SudokuChecker2();
+        $checker = new XorSudokuChecker();
         $this->assertEquals($isValid, $checker->check($sudoku));
     }
 

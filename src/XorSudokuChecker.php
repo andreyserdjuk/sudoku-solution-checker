@@ -1,10 +1,12 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Sudoku;
 
-class SudokuChecker2
+class XorSudokuChecker
 {
-    public function check(array $sudoku)
+    public function check(array $sudoku): bool
     {
         $blockColumns = [];
         $columns = [];
