@@ -34,4 +34,4 @@ for each element of array all elements can be XOR'ed. If result = 1 - all elemen
 0 0 0 1     1
 ```
 See `./src/SudokuChecker2.php`. As I tried to minimize complexity to O(2n) the algorithm looks compressed.  
-As [OOD sudoku checker](https://github.com/sobit/sudoku-checker) is already written I see no need to create another one.
+As the [Object-Oriented sudoku checker](https://github.com/sobit/sudoku-checker) is already written I see no need to create another one.
