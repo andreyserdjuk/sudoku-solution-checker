@@ -1,5 +1,6 @@
 ### Sudoku solution checker  
-
+[![Build Status](https://travis-ci.org/andreyserdjuk/sudoku-solution-checker.svg?branch=master)](https://travis-ci.org/andreyserdjuk/sudoku-solution-checker)
+[![codecov](https://codecov.io/gh/andreyserdjuk/sudoku-solution-checker/branch/master/graph/badge.svg?token=a2fbxlabdm)](https://codecov.io/gh/andreyserdjuk/sudoku-solution-checker)
 #### Install phpunit and run tests
 ```bash
 composer install
