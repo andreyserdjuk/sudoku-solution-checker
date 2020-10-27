@@ -16,6 +16,10 @@ class XorSudokuChecker
             $colIndex = 0;
             foreach (array_chunk($row, 3) as $rowBlockIndex => $rowBlock) {
                 foreach ($rowBlock as $rowEl) {
+                    if ($rowEl < 1 || $rowEl > 9) {
+                        return false;
+                    }
+
                     if (!isset($columns[$colIndex])) {
                         $columns[$colIndex] = 0;
                     }
